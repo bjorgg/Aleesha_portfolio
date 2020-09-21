@@ -1,0 +1,132 @@
+body, html {
+    font-family: 'Lato', sans-serif;
+    color: #444040;
+    height: 100%;
+    margin: 0;
+    background-color: #FAFCFE;
+}
+
+h1 {
+    font-size: 3.8rem;
+    line-height: 4.9rem;
+    color: #FAFCFE;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 48px;
+}
+
+h2 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 2rem;
+    line-height: 1.7rem;
+    color: #444040;
+    text-align: right;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.h3 {
+    font-family: 'Lobster Two', cursive;
+    font-size: 1.625rem;
+    line-height: 1.5rem;
+    color: #5D3085;
+    text-align: right;
+    font-style: italic;
+    font-weight: 700;
+}
+
+ul {
+    font-weight: 900;
+    font-size: 1.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+
+li a {
+    display: block;
+    color: #444040;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #5D3085;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    overflow-y: auto;
+}
+
+header {
+    flex: 2;
+    order: 1;
+}
+
+.portrait img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 160px;
+    border: .625rem solid #444040;
+    border-radius: 50%;
+}
+
+.social-links a {
+    margin-right: 5px;
+}
+
+nav {
+    flex: 2;
+    order: 2;
+}
+
+footer {
+    flex: 1;
+    order: 3;
+  
+}
+
+.logo {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: 100px;
+}
+
+
+.hero {
+    background-image: url(images/aleesha-hero.jpg);
+    margin-left: 300px;
+    margin-right: 0;
+    height: 100%;
+    width: calc(100% - 300px);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.qoute {
+    max-width: 70%;
+}
+
+@media only screen and (max-width: 1280px) {
+    html { 
+        font-size: 10px;
+    }
+}

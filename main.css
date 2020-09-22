@@ -1,3 +1,5 @@
+/* html, body, headings and list styling*/
+
 body, html {
     font-family: 'Lato', sans-serif;
     color: #444040;
@@ -47,7 +49,7 @@ ul {
 li a {
     display: block;
     color: #444040;
-    padding: .5rem 1rem;
+    padding: .5rem 1rem .5rem 0;
     text-decoration: none;
 }
 
@@ -55,10 +57,12 @@ li a:hover {
     color: #5D3085;
 }
 
+/*Flex container*/
+
 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -66,6 +70,8 @@ li a:hover {
     bottom: 0;
     width: 300px;
     overflow-y: auto;
+    height: 100%;
+    padding-left: 45px;
 }
 
 header {
@@ -85,26 +91,47 @@ header {
 
 .social-links a {
     margin-right: 5px;
+    padding-top: 20px;
+    transition: transform .2s;
+}
+
+.fb-logo:hover {
+    transform: scale(.9);
+}
+
+.ig-logo:hover {
+    transform: scale(.9);
+}
+
+.li-logo:hover {
+    transform: scale(.9);
 }
 
 nav {
-    flex: 2;
+    flex: 2.5;
     order: 2;
 }
 
 footer {
-    flex: 1;
+    flex: .4;
     order: 3;
+
   
 }
 
+.footer-text {
+    font-size: .8rem;
+    margin-bottom: 2px;
+}
+
 .logo {
-    margin-left: 30px;
-    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-bottom: 20px;
     display: block;
     width: 100px;
 }
 
+/*Hero section*/
 
 .hero {
     background-image: url(images/aleesha-hero.jpg);
@@ -124,6 +151,8 @@ footer {
 .qoute {
     max-width: 70%;
 }
+
+/*Media query*/
 
 @media only screen and (max-width: 1280px) {
     html { 
